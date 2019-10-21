@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <style>
+    body {
+      font-size: 16px;
+      margin: 0;
+      overflow-x: hidden;
+      padding: 0;
+    }
+
+    header {
+      background-color: #f4f5f7;
+      height: 100vh;
+      width: 100%;
+    }
+
+    footer {
+      background-color: red;
+      height: 250px;
+      width: 100%;
+    }
+
+    .about {
+      background-color: aquamarine;
+      height: 450px;
+    }
+
+    .features {
+      background-color: #132530;
+      height: 100vh;
+      width: 100%;
+      z-index: 1;
+    }
+
+    .features::-webkit-scrollbar {
+      display: none;
+      scrollbar-width: none;
+    }
+
+    .features__wrapper{
+      display: flex;
+      padding: 150px;
+      position: -webkit-sticky;
+      position: sticky;
+      top: 50px;
+      z-index: 999;
+    }
+
+    .features__wrapper__scrollCanvas{
+      display: flex;
+    }
+
+    .features__wrapper__block {
+      background-color: white;
+      height: 400px;
+      margin-right: 1rem;
+      width: 450px;
+    }
+    .features__ghost{
+      z-index: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+
+  </header>
+  <section class="about">
+
+  </section>
+  
+  <section class="features" id="features">
+    <div class="features__wrapper" id="features__wrapper">
+      <div class="features__wrapper__scrollCanvas" id="features__wrapper__scrollCanvas">
+        <div class="features__wrapper__block"></div>
+        <div class="features__wrapper__block"></div>
+        <div class="features__wrapper__block"></div>
+        <div class="features__wrapper__block"></div>
+        <div class="features__wrapper__block"></div>
+        <div class="features__wrapper__block"></div>
+        <div class="features__wrapper__block"></div>
+        <div class="features__wrapper__block"></div>
+        <div class="features__wrapper__block"></div>
+        <div class="features__wrapper__block"></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+
+  </footer>
+
+  <!--JS-->
+  <script src="http://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
